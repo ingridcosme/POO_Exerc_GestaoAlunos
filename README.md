@@ -1,50 +1,49 @@
-# Exerc√≠cio pertencente √† disciplina Programa√ß√£o Orientada a Objetos.
+# ExercÌcio pertencente ‡ disciplina ProgramaÁ„o Orientada a Objetos
 
-Crie um sistema para gest√£o de Alunos.
+## Crie um sistema para gest„o de Alunos
 
-O sistema dever√° permitir a Cria√ß√£o, Atualiza√ß√£o, Remo√ß√£o e Exibi√ß√£o do(s) Aluno(s). A classe Aluno deve conter as seguintes caracter√≠sticas e comportamentos.
 
-Caracter√≠sticas : 
-  - id : long 
-  - nascimento : Date 
-  - ra : String 
-  - nome : String
+O sistema dever· permitir a CriaÁ„o, AtualizaÁ„o, RemoÁ„o e ExibiÁ„o do(s) Aluno(s).
 
-Comportamentos : 
-  - String toString() // Deve retornar um texto com os dados do aluno
+A classe Aluno deve conter as seguintes caracterÌsticas e comportamentos.
 
-Crie uma classe chamada GestaoAlunos, contendo as seguintes caracter√≠sticas e comportamentos.
+**CaracterÌsticas:**
+* id: long
+* nascimento: Date
+* ra: String
+* nome: String
 
-Caracter√≠sticas: 
-  - indice : int // Indica em qual posi√ß√£o deve ser guardada a proxima inst√¢ncia de aluno 
-  - alunos : Aluno[] // Matriz com 50 alunos
+**Comportamentos:**
+* String toString() // Deve retornar um texto com os dados do aluno
 
-Comportamentos: 
-  - void criar() 
-  - void atualizar() 
-  - void excluir() 
-  - void exibir() 
-  - void menu()
 
-Regras do sistema
+Crie uma classe chamada GestaoAlunos, contendo as seguintes caracterÌsticas e comportamentos.
 
-O comportamento criar() deve criar uma nova inst√¢ncia de Aluno, preencher as caracter√≠sticas desta inst√¢ncia com informa√ß√µes fornecidas pelo usu√°rio, e deve guardar esta inst√¢ncia de aluno na matriz (alunos) na posi√ß√£o indicada pela vari√°vel indice.
+**CaracterÌsticas:**
+* indice: int // Indica em qual posiÁ„o deve ser guardada a proxima inst‚ncia de aluno 
+* alunos: Aluno[] // Matriz com 50 alunos
 
-A fun√ß√£o exibir() deve pedir ao usu√°rio para que digite um n√∫mero de RA e procure qual aluno na matriz (alunos) possui um RA id√™ntico. Os dados do aluno encontrado devem ser exibidos na tela.
+**Comportamentos:**
+* void criar()
+* void atualizar()
+* void excluir()
+* void exibir()
+* void menu()
 
-A fun√ß√£o excluir() deve pedir ao usu√°rio para digitar um RA, e em seguida deve excluir o(s) aluno(s) com este RA da matriz (alunos)
+**Regras do sistema**
 
-A fun√ß√£o atualizar() deve pedir ao usu√°rio para digitar um RA, e em seguida deve procurar pelo primeiro aluno na matriz (alunos) que contenha este RA. A fun√ß√£o deve em seguida solicitar ao usu√°rio para que digite os demais dados do aluno (nome e nascimento) para trocar os valores das caracter√≠sticas do aluno encontrado na matriz pelos valores rec√©m informados pelo usu√°rio.
+1. O comportamento criar() deve criar uma nova inst‚ncia de Aluno, preencher as caracterÌsticas desta inst‚ncia com informaÁıes fornecidas pelo usu·rio, e deve guardar esta inst‚ncia de aluno na matriz (alunos) na posiÁ„o indicada pela vari·vel indice.
 
-O m√©todo menu() deve rodar em um loop infinito, mostrando na tela as op√ß√µes para o usu√°rio:
+2. A funÁ„o exibir() deve pedir ao usu·rio para que digite um n˙mero de RA e procure qual aluno na matriz (alunos) possui um RA idÍntico. Os dados do aluno encontrado devem ser exibidos na tela.
 
-  - (C)riar (E)xibir (R)emover
+3. A funÁ„o excluir() deve pedir ao usu·rio para digitar um RA, e em seguida deve excluir o(s) aluno(s) com este RA da matriz (alunos)
 
-  - (A)tualizar (S)air
+4. A funÁ„o atualizar() deve pedir ao usu·rio para digitar um RA, e em seguida deve procurar pelo primeiro aluno na matriz (alunos) que contenha este RA. A funÁ„o deve em seguida solicitar ao usu·rio para que digite os demais dados do aluno (nome e nascimento) para trocar os valores das caracterÌsticas do aluno encontrado na matriz pelos valores recÈm informados pelo usu·rio.
 
-  - Pegue a primeira letra digitada pelo usu√°rio e assuma como sendo a op√ß√£o escolhida
+5. O mÈtodo menu() deve rodar em um loop infinito, mostrando na tela as opÁıes para o usu·rio:
+    * (C)riar (E)xibir (R)emover (A)tualizar (S)air
+    * Pegue a primeira letra digitada pelo usu·rio e assuma como sendo a opÁ„o escolhida
 
-    - String textoMaiusculo = scan.nextLine().toUpperCase();
-    - char letra = textoMaiusculo.charAt(0);
-    
-  - Conforme a op√ß√£o escolhida o m√©todo deve invocar a fun√ß√£o correspondente criar(), exibir(), excluir(), atualizar() ou System.exit
+        * String textoMaiusculo = scan.nextLine().toUpperCase();
+        * char letra = textoMaiusculo.charAt(0);
+    * Conforme a opÁ„o escolhida o mÈtodo deve invocar a funÁ„o correspondente criar(), exibir(), excluir(), atualizar() ou System.exit
